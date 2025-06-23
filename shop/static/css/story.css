@@ -1,0 +1,217 @@
+body{
+    font-family: "Sofia Sans", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1;
+    background-color: #8E24AA;
+    display: flex;
+    column-gap: 37px;
+}
+a{
+  text-decoration: none;
+}
+.sidebar{
+    padding: 50px 15px 60px 55px;
+    background-color: #A8E6CF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 252px;
+   min-height: 100vh;
+    color: black;
+}
+.sidebar-logo{
+    margin-bottom: 57px;
+}
+.sidebar-help{
+    margin-top: auto;
+}
+.nav-title{
+   margin-bottom: 44px;
+   font-weight: 700;
+   font-size: 30px;
+}
+.nav-list{
+    font-size: 15.71px;
+}
+.nav-list a{
+    transition: color 0.2s ease-in;
+}
+.nav-list a:hover{
+    color: #9C27B0;
+}
+.nav-list li{
+    margin-bottom: 27px;
+}
+.nav-list img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 26px;
+    height: auto;
+}
+.help{
+    font-size: 15.7px;
+    color: black;
+}
+.help:hover{
+    color: #9C27B0;
+}
+.help-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+.main{
+    padding-top: 45px;
+    width: 1100px;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 70px;
+}
+.search{
+    width: 490px;
+    height: 44px;
+}
+.search-label{
+    height: 100%;
+    display: flex;
+}
+.search-icon{
+    margin-right: 7px;
+}
+.search-input{
+    padding: 0 10px;
+    flex-grow: 1;
+    font-size: 17px;
+    background: none;
+    border: none;
+    border-radius: 15px;
+}
+.search-input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.search-input:focus, .search-input:active{
+    background-color: #ffffff;
+}
+.nav-header{
+    font-size: 17px;
+}
+.nav-header-list{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.nav-header-link-text{
+    margin-right: 42px;
+    position: relative;
+}
+.nav-header-link-text::after{
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -9px;
+
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.2s ease-in;
+}
+.nav-header-link-text:hover::after{
+    width: 100%;
+}
+.nav-header-link-text.active::after{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -9px;
+
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+}
+.nav-header-link-text + .nav-header-link-icon{
+    margin-left: 50px;
+}
+.nav-header-link-icon + .nav-header-link-icon{
+    margin-left: 25px;
+}
+.story{
+    font-size: 20px;
+}
+.pop-up{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+.pop-up.active{
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0, 0, .8);
+}
+.pop-up-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.pop-up-body{
+    margin: auto;
+    width: 500px;
+    background-color: #9C27B0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+.pop-up-body p{
+    font-size: 28px;
+    font-family: "Sofia Sans", sans-serif;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.pop-up-body input{
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 350px;
+    padding: 17px 20px;
+    background-color: #e5e5e5;
+    border-radius:10px;
+    border: none; 
+    font-family: "Sofia Sans", sans-serif;  
+    font-size: 18px;
+    color: #89909f;
+}
+.pop-up-body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 16px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background-color:#A8E6CF;
+}
+.pop-up-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+    color: #ffffff;
+}

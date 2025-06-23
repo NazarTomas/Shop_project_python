@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing</title>
+  <title>Shoes</title>
   <link href="../static/css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="../static/css/clothing.css" rel="stylesheet" type="text/css" />
+  <link href="../static/css/shoes.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://use.typekit.net/vhw4ooj.css">
   <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
@@ -34,7 +34,8 @@
       <ul class="nav-list">
         <li><a href="#"><img src="../static/img/nav-icons/lightning.svg" alt="New In">New In</a></li>
         <li><a href="{{ url_for('clothing') }}"><img src="../static/img/nav-icons/clothes.svg"
-              alt="Clothing">Clothing</a></li>
+              alt="Clothing">Clothing</a>
+        </li>
         <li><a href="{{ url_for('shoes') }}"><img src="../static/img/nav-icons/shoes.svg" alt="Shoes">Shoes</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/bag.svg" alt="Accessories">Accessories</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/acrobat.svg" alt="">Activewear</a></li>
@@ -96,7 +97,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing1.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes1.webp' ) }}"
                 alt="{{ product }}">
             </a>
           </div>
@@ -108,7 +109,19 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing2.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes2.jpg' ) }}"
+                alt="{{ product }}">
+            </a>
+          </div>
+          <div class="card card-vertical card-product">
+            <button class="card-product-fav-btn">
+              <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85293 2.23724L8.42982 1.64278C9.74075 0.290146 11.8283 0.101245 13.2084 1.27701C14.824 2.65599 14.9109 5.13799 13.4608 6.63447L7.79659 12.4831C7.62714 12.658 7.35815 12.658 7.18871 12.4831L1.5246 6.63457C0.0772874 5.13808 0.164165 2.65612 1.77968 1.27713C3.15989 0.101064 5.25089 0.290979 6.55863 1.64301L7.13529 2.23724L7.49411 2.60698L7.85293 2.23724Z" />
+              </svg>
+            </button>
+            <a class="card-product-link" href="#">
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes3.webp' ) }}"
                 alt="Product">
             </a>
           </div>
@@ -120,19 +133,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing4.jpg' ) }}"
-                alt="Product">
-            </a>
-          </div>
-          <div class="card card-vertical card-product">
-            <button class="card-product-fav-btn">
-              <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M7.85293 2.23724L8.42982 1.64278C9.74075 0.290146 11.8283 0.101245 13.2084 1.27701C14.824 2.65599 14.9109 5.13799 13.4608 6.63447L7.79659 12.4831C7.62714 12.658 7.35815 12.658 7.18871 12.4831L1.5246 6.63457C0.0772874 5.13808 0.164165 2.65612 1.77968 1.27713C3.15989 0.101064 5.25089 0.290979 6.55863 1.64301L7.13529 2.23724L7.49411 2.60698L7.85293 2.23724Z" />
-              </svg>
-            </button>
-            <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing5.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes4.webp' ) }}"
                 alt="Product">
             </a>
           </div>
@@ -148,7 +149,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing8.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes5.avif' ) }}"
                 alt="Product">
             </a>
           </div>
@@ -160,7 +161,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing9.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes6.webp' ) }}"
                 alt="Product">
             </a>
           </div>
@@ -172,7 +173,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing10.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes7.png' ) }}"
                 alt="Product">
             </a>
           </div>
@@ -184,7 +185,7 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing11.jpg' ) }}"
+              <img class="card-product-img" src="{{ url_for('static', filename='Shoes/shoescard/shoes8.jpg' ) }}"
                 alt="Product">
             </a>
           </div>

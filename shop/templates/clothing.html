@@ -33,9 +33,9 @@
       <h2 class="nav-title">Explore</h2>
       <ul class="nav-list">
         <li><a href="#"><img src="../static/img/nav-icons/lightning.svg" alt="New In">New In</a></li>
-        <li><a href="../templates/clothing.html"><img src="../static/img/nav-icons/clothes.svg"
+        <li><a href="{{ url_for('clothing') }}"><img src="../static/img/nav-icons/clothes.svg"
               alt="Clothing">Clothing</a></li>
-        <li><a href="../templates/shoes.html"><img src="../static/img/nav-icons/shoes.svg" alt="Shoes">Shoes</a></li>
+        <li><a href="{{ url_for('shoes') }}"><img src="../static/img/nav-icons/shoes.svg" alt="Shoes">Shoes</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/bag.svg" alt="Accessories">Accessories</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/acrobat.svg" alt="">Activewear</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/gift.svg" alt="Gifts & Living">Gifts & Living </a></li>
@@ -75,8 +75,8 @@
       <div class="header-links">
         <nav class="nav-header">
           <ul class="nav-header-list">
-            <li class="nav-header-link-text active"><a href="../templates/index.html">products</a></li>
-            <li class="nav-header-link-text"><a href="../templates/story.html">story</a></li>
+            <li class="nav-header-link-text active"><a href="{{ url_for('home') }}">products</a></li>
+            <li class="nav-header-link-text"><a href="{{ url_for('story') }}">story</a></li>
             <li class="nav-header-link-text"><a href="#">manufacturing</a></li>
             <li class="nav-header-link-text"><a href="#">packaging</a></li>
             <li class="nav-header-link-icon"><a href="#"><img src="../static/img/icons/basket.svg" alt="Cart"></a></li>
@@ -96,7 +96,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing1.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing1.jpg' ) }}"
+                alt="{{ product }}">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -107,7 +108,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing2.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing2.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -118,7 +120,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing4.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing4.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -129,7 +132,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing5.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing5.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
         </div>
@@ -144,7 +148,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing8.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing8.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -155,7 +160,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing9.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing9.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -166,7 +172,8 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing10.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing10.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
           <div class="card card-vertical card-product">
@@ -177,14 +184,15 @@
               </svg>
             </button>
             <a class="card-product-link" href="#">
-              <img class="card-product-img" src="../Clothing/cards/clothing11.jpg" alt="Product">
+              <img class="card-product-img" src="{{ url_for('static', filename='Clothing/cards/clothing11.jpg' ) }}"
+                alt="Product">
             </a>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <script src="../script/script.js"></script>
+  <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 </body>
 
 </html>

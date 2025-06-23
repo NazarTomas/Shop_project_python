@@ -33,10 +33,10 @@
       <h2 class="nav-title">Explore</h2>
       <ul class="nav-list">
         <li><a href="#"><img src="../static/img/nav-icons/lightning.svg" alt="New In">New In</a></li>
-        <li><a href="../templates/clothing.html"><img src="../static/img/nav-icons/clothes.svg"
+        <li><a href="{{ url_for('clothing') }}"><img src="../static/img/nav-icons/clothes.svg"
               alt="Clothing">Clothing</a>
         </li>
-        <li><a href="../templates/shoes.html"><img src="../static/img/nav-icons/shoes.svg" alt="Shoes">Shoes</a></li>
+        <li><a href="{{ url_for('shoes') }}"><img src="../static/img/nav-icons/shoes.svg" alt="Shoes">Shoes</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/bag.svg" alt="Accessories">Accessories</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/acrobat.svg" alt="">Activewear</a></li>
         <li><a href="#"><img src="../static/img/nav-icons/gift.svg" alt="Gifts & Living">Gifts & Living </a></li>
@@ -76,7 +76,7 @@
       <div class="header-links">
         <nav class="nav-header">
           <ul class="nav-header-list">
-            <li class="nav-header-link-text"><a href="../templates/index.html">products</a></li>
+            <li class="nav-header-link-text"><a href="{{ url_for('home') }}">products</a></li>
             <li class="nav-header-link-text active"><a href="#">story</a></li>
             <li class="nav-header-link-text"><a href="#">manufacturing</a></li>
             <li class="nav-header-link-text"><a href="#">packaging</a></li>
@@ -125,7 +125,7 @@
         cupiditate!</p>
     </div>
   </main>
-  <script src="../script/script.js"></script>
+  <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 </body>
 
 </html>
